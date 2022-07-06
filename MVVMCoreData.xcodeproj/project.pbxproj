@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D6D6C2AF28758BCC00643FB7 /* MVVMCoreDateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D6C2AE28758BCC00643FB7 /* MVVMCoreDateApp.swift */; };
-		D6D6C2B128758BCC00643FB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D6C2B028758BCC00643FB7 /* ContentView.swift */; };
+		D6CAB6492875B61200451E97 /* CoreDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CAB6482875B61200451E97 /* CoreDataViewModel.swift */; };
+		D6D6C2AF28758BCC00643FB7 /* MVVMCoreDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D6C2AE28758BCC00643FB7 /* MVVMCoreDataApp.swift */; };
+		D6D6C2B128758BCC00643FB7 /* FruitCoreDateListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D6C2B028758BCC00643FB7 /* FruitCoreDateListView.swift */; };
 		D6D6C2B328758BCD00643FB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6D6C2B228758BCD00643FB7 /* Assets.xcassets */; };
 		D6D6C2B628758BCD00643FB7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6D6C2B528758BCD00643FB7 /* Preview Assets.xcassets */; };
+		D6D6C2BE28758D4500643FB7 /* FruitContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D6D6C2BC28758D4500643FB7 /* FruitContainer.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D6D6C2AB28758BCC00643FB7 /* MVVMCoreDate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMCoreDate.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6D6C2AE28758BCC00643FB7 /* MVVMCoreDateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMCoreDateApp.swift; sourceTree = "<group>"; };
-		D6D6C2B028758BCC00643FB7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D6CAB6482875B61200451E97 /* CoreDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewModel.swift; sourceTree = "<group>"; };
+		D6D6C2AB28758BCC00643FB7 /* MVVMCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6D6C2AE28758BCC00643FB7 /* MVVMCoreDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMCoreDataApp.swift; sourceTree = "<group>"; };
+		D6D6C2B028758BCC00643FB7 /* FruitCoreDateListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCoreDateListView.swift; sourceTree = "<group>"; };
 		D6D6C2B228758BCD00643FB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6D6C2B528758BCD00643FB7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D6D6C2BD28758D4500643FB7 /* FruitContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FruitContainer.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +39,7 @@
 		D6D6C2A228758BCC00643FB7 = {
 			isa = PBXGroup;
 			children = (
-				D6D6C2AD28758BCC00643FB7 /* MVVMCoreDate */,
+				D6D6C2AD28758BCC00643FB7 /* MVVMCoreData */,
 				D6D6C2AC28758BCC00643FB7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +47,22 @@
 		D6D6C2AC28758BCC00643FB7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D6D6C2AB28758BCC00643FB7 /* MVVMCoreDate.app */,
+				D6D6C2AB28758BCC00643FB7 /* MVVMCoreData.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D6D6C2AD28758BCC00643FB7 /* MVVMCoreDate */ = {
+		D6D6C2AD28758BCC00643FB7 /* MVVMCoreData */ = {
 			isa = PBXGroup;
 			children = (
-				D6D6C2AE28758BCC00643FB7 /* MVVMCoreDateApp.swift */,
-				D6D6C2B028758BCC00643FB7 /* ContentView.swift */,
+				D6D6C2AE28758BCC00643FB7 /* MVVMCoreDataApp.swift */,
+				D6D6C2B028758BCC00643FB7 /* FruitCoreDateListView.swift */,
+				D6CAB6482875B61200451E97 /* CoreDataViewModel.swift */,
+				D6D6C2BC28758D4500643FB7 /* FruitContainer.xcdatamodeld */,
 				D6D6C2B228758BCD00643FB7 /* Assets.xcassets */,
 				D6D6C2B428758BCD00643FB7 /* Preview Content */,
 			);
-			path = MVVMCoreDate;
+			path = MVVMCoreData;
 			sourceTree = "<group>";
 		};
 		D6D6C2B428758BCD00643FB7 /* Preview Content */ = {
@@ -70,9 +76,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D6D6C2AA28758BCC00643FB7 /* MVVMCoreDate */ = {
+		D6D6C2AA28758BCC00643FB7 /* MVVMCoreData */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D6D6C2B928758BCD00643FB7 /* Build configuration list for PBXNativeTarget "MVVMCoreDate" */;
+			buildConfigurationList = D6D6C2B928758BCD00643FB7 /* Build configuration list for PBXNativeTarget "MVVMCoreData" */;
 			buildPhases = (
 				D6D6C2A728758BCC00643FB7 /* Sources */,
 				D6D6C2A828758BCC00643FB7 /* Frameworks */,
@@ -82,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = MVVMCoreDate;
+			name = MVVMCoreData;
 			productName = MVVMCoreDate;
-			productReference = D6D6C2AB28758BCC00643FB7 /* MVVMCoreDate.app */;
+			productReference = D6D6C2AB28758BCC00643FB7 /* MVVMCoreData.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D6D6C2A628758BCC00643FB7 /* Build configuration list for PBXProject "MVVMCoreDate" */;
+			buildConfigurationList = D6D6C2A628758BCC00643FB7 /* Build configuration list for PBXProject "MVVMCoreData" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D6D6C2AA28758BCC00643FB7 /* MVVMCoreDate */,
+				D6D6C2AA28758BCC00643FB7 /* MVVMCoreData */,
 			);
 		};
 /* End PBXProject section */
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6D6C2B128758BCC00643FB7 /* ContentView.swift in Sources */,
-				D6D6C2AF28758BCC00643FB7 /* MVVMCoreDateApp.swift in Sources */,
+				D6D6C2BE28758D4500643FB7 /* FruitContainer.xcdatamodeld in Sources */,
+				D6CAB6492875B61200451E97 /* CoreDataViewModel.swift in Sources */,
+				D6D6C2B128758BCC00643FB7 /* FruitCoreDateListView.swift in Sources */,
+				D6D6C2AF28758BCC00643FB7 /* MVVMCoreDataApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +274,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MVVMCoreDate/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MVVMCoreData/Preview Content\"";
 				DEVELOPMENT_TEAM = U68AWG975G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -281,7 +289,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cskorobogatow.MVVMCoreDate;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MVVMCoreData;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -295,7 +303,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MVVMCoreDate/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MVVMCoreData/Preview Content\"";
 				DEVELOPMENT_TEAM = U68AWG975G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -310,7 +318,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cskorobogatow.MVVMCoreDate;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MVVMCoreData;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -320,7 +328,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D6D6C2A628758BCC00643FB7 /* Build configuration list for PBXProject "MVVMCoreDate" */ = {
+		D6D6C2A628758BCC00643FB7 /* Build configuration list for PBXProject "MVVMCoreData" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D6D6C2B728758BCD00643FB7 /* Debug */,
@@ -329,7 +337,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D6D6C2B928758BCD00643FB7 /* Build configuration list for PBXNativeTarget "MVVMCoreDate" */ = {
+		D6D6C2B928758BCD00643FB7 /* Build configuration list for PBXNativeTarget "MVVMCoreData" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D6D6C2BA28758BCD00643FB7 /* Debug */,
@@ -339,6 +347,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D6D6C2BC28758D4500643FB7 /* FruitContainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D6D6C2BD28758D4500643FB7 /* FruitContainer.xcdatamodel */,
+			);
+			currentVersion = D6D6C2BD28758D4500643FB7 /* FruitContainer.xcdatamodel */;
+			path = FruitContainer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D6D6C2A328758BCC00643FB7 /* Project object */;
 }

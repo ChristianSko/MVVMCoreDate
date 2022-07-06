@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct MVVMCoreDateApp: App {
+struct MVVMCoreDataApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FruitCoreDateListView()
         }
     }
 }
